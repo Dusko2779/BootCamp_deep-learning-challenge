@@ -16,19 +16,6 @@ INCOME_AMT—Income classification
 SPECIAL_CONSIDERATIONS—Special considerations for application
 ASK_AMT—Funding amount requested
 IS_SUCCESSFUL—Was the money used effectively
-Before You Begin
-Create a new repository for this project called deep-learning-challenge. Do not add this Challenge to an existing repository.
-
-Clone the new repository to your computer.
-
-Inside your local git repository, create a directory for the Deep Learning Challenge.
-
-Push the above changes to GitHub.
-
-Files
-Download the following files to help you get started:
-
-Module 21 Challenge filesLinks to an external site.
 
 Instructions
 Step 1: Preprocess the Data
