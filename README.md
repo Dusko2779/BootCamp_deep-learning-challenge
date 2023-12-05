@@ -1,24 +1,16 @@
 # Module_21_Deep-Learning-Challenge
  
-Background
+### Background
 The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organisations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organisation, such as:
 
-EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organisation classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organisation type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special considerations for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
-
-Instructions
+### Instructions
 Step 1: Preprocess the Data
+
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/6e48fd94-d977-44f1-b365-5d0bcba849e0)
+
+
 Using your knowledge of Pandas and scikit-learn’s StandardScaler(), you’ll need to preprocess the dataset. This step prepares you for Step 2, where you'll compile, train, and evaluate the neural network model.
 
 Using the information we provided in the Challenge files, follow the instructions to complete the preprocessing steps.
@@ -30,6 +22,9 @@ Drop the EIN and NAME columns.
 
 Determine the number of unique values for each column.
 
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/b4ba8c0f-e1dc-427f-9191-abecb8af17fd)
+
+
 For columns that have more than 10 unique values, determine the number of data points for each unique value.
 
 Use the number of data points for each unique value to pick a cutoff point to bin "rare" categorical variables together in a new value, Other, and then check if the binning was successful.
@@ -38,10 +33,16 @@ Use pd.get_dummies() to encode categorical variables.
 
 Split the preprocessed data into a features array, X, and a target array, y. Use these arrays and the train_test_split function to split the data into training and testing datasets.
 
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/9cb09b7c-c279-4b8f-b608-862622701796)
+
+
 Scale the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
 
-Step 2: Compile, Train, and Evaluate the Model
+### Step 2: Compile, Train, and Evaluate the Model
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup-funded organisation will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
+
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/6282315b-8a07-40b6-b98b-a5fa3269fd7b)
+
 
 Continue using the Jupyter Notebook in which you performed the preprocessing steps from Step 1.
 
@@ -63,7 +64,7 @@ Evaluate the model using the test data to determine the loss and accuracy.
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity.h5.
 
-Step 3: Optimise the Model
+### Step 3: Optimise the Model
 Using your knowledge of TensorFlow, optimise your model to achieve a target predictive accuracy higher than 75%.
 
 Use any or all of the following methods to optimise your model:
@@ -78,6 +79,9 @@ Use different activation functions for the hidden layers.
 Add or reduce the number of epochs to the training regimen.
 Note: If you make at least three attempts at optimising your model, you will not lose points if your model does not achieve target performance.
 
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/257ec783-839a-46cf-a4a9-17a485da9909)
+
+
 Create a new Jupyter Notebook file and name it AlphabetSoupCharity_Optimisation.ipynb.
 
 Import your dependencies and read in the charity_data.csv to a Pandas DataFrame.
@@ -88,7 +92,10 @@ Design a neural network model, and be sure to adjust for modifications that will
 
 Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimisation.h5.
 
-Step 4: Write a Report on the Neural Network Model
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/1ec67e07-dbe5-4b68-9771-11109bd81c73)
+
+
+### Step 4: Write a Report on the Neural Network Model
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 
 The report should contain the following:
@@ -96,6 +103,9 @@ The report should contain the following:
 Overview of the analysis: Explain the purpose of this analysis.
 
 Results: Using bulleted lists and images to support your answers, address the following questions:
+
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/0a5a730c-c678-44be-aab4-0e18c09c4e66)
+
 
 Data Preprocessing
 
@@ -108,3 +118,6 @@ How many neurons, layers, and activation functions did you select for your neura
 Were you able to achieve the target model performance?
 What steps did you take in your attempts to increase model performance?
 Summary: Summarise the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+![image](https://github.com/Dusko2779/BootCamp_deep-learning-challenge/assets/134830906/b53390d3-abb4-444c-9937-6360a7580b53)
+
